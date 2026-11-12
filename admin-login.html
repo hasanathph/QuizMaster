@@ -1,0 +1,110 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Administrator Access | QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-login-page">
+
+    <div class="admin-login-wrapper">
+
+        <!-- LEFT PANEL -->
+        <div class="admin-brand-panel">
+
+            <div class="admin-brand">
+                <div class="admin-logo">Q</div>
+                <span>QuizMaster</span>
+            </div>
+
+            <div class="admin-brand-content">
+                <span class="admin-tag">ADMINISTRATION</span>
+
+                <h1>Manage your<br>platform with<br>confidence.</h1>
+
+                <p>
+                    A centralized workspace to manage users,
+                    quizzes and platform activities efficiently.
+                </p>
+            </div>
+
+            <div class="admin-brand-footer">
+                <span>QUIZMASTER ADMIN PORTAL</span>
+                <span>© 2026 QuizMaster</span>
+            </div>
+
+        </div>
+
+        <!-- RIGHT PANEL -->
+        <div class="admin-form-panel">
+
+            <div class="admin-form-content">
+
+                <div class="admin-heading">
+                    <span class="admin-welcome">WELCOME BACK</span>
+                    <h2>Administrator Login</h2>
+                    <p>Enter your credentials to access the dashboard.</p>
+                </div>
+
+                <form id="adminLoginForm">
+
+                    <div class="admin-input-group">
+                        <label for="adminEmail">Email Address</label>
+
+                        <input
+                            type="email"
+                            id="adminEmail"
+                            placeholder="admin@example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="admin-input-group">
+                        <label for="adminPassword">Password</label>
+
+                        <input
+                            type="password"
+                            id="adminPassword"
+                            placeholder="Enter your password"
+                            required
+                        >
+                    </div>
+
+                    <p id="adminLoginMessage"></p>
+
+                    <button type="submit" class="admin-login-btn">
+                        Sign In to Dashboard
+                        <span>→</span>
+                    </button>
+
+                </form>
+
+                <div class="admin-security">
+                    <span class="security-icon">✓</span>
+                    <p>Secure administrator access</p>
+                </div>
+
+                <a href="index.html" class="admin-home-link">
+                    ← Back to Homepage
+                </a>
+
+            </div>
+
+            <div class="admin-bottom-text">
+                Designed for smarter quiz management.
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+
+

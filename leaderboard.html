@@ -1,0 +1,73 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard - QuizMaster</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="leaderboard-page">
+
+    <header class="profile-navbar">
+
+        <div class="login-logo">
+            <span>✓</span>
+            <h2>QuizMaster</h2>
+        </div>
+
+        <nav class="category-nav">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+
+    </header>
+
+    <main class="leaderboard-container">
+
+        <div class="leaderboard-heading">
+            <h1>Leaderboard</h1>
+            <p>See how you rank among other quiz participants</p>
+        </div>
+
+        <div class="leaderboard-card">
+
+            <h2>Top Performers</h2>
+
+            <div class="leaderboard-table-wrapper">
+
+                <table class="leaderboard-table">
+
+                    <thead>
+                        <tr>
+                            <th>Rank</th>
+                            <th>User Name</th>
+                            <th>Quizzes Attended</th>
+                            <th>Total Score</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="leaderboardTableBody">
+                        <tr>
+                            <td colspan="4">Loading leaderboard...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,64 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Quiz Category | QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="delete-category-page">
+
+    <div class="delete-category-container">
+
+        <div class="delete-category-header">
+            <div>
+                <span class="delete-category-label">ADMINISTRATION</span>
+                <h1>Delete Quiz Category</h1>
+                <p>Review existing categories and remove unwanted ones.</p>
+            </div>
+
+            <a href="admin-add-category.html" class="delete-back-link">
+                + Add Category
+            </a>
+        </div>
+
+        <div class="delete-category-card">
+
+            <div class="delete-card-heading">
+                <h2>Manage Categories</h2>
+                <p>Available quiz categories</p>
+            </div>
+
+            <div class="delete-table-wrapper">
+
+                <table class="delete-category-table">
+
+                    <thead>
+                        <tr>
+                            <th>Sl. No</th>
+                            <th>Category Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="deleteCategoryTable">
+                        <tr>
+                            <td colspan="3">Loading categories...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

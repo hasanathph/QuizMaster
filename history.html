@@ -1,0 +1,72 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz History - QuizMaster</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="history-page">
+
+    <header class="profile-navbar">
+
+        <div class="login-logo">
+            <span>✓</span>
+            <h2>QuizMaster</h2>
+        </div>
+
+        <nav class="category-nav">
+            <a href="index.html">Home</a>
+            <a href="categories.html">Categories</a>
+            <a href="profile.html">My Profile</a>
+        </nav>
+
+    </header>
+
+    <main class="history-container">
+
+        <div class="history-heading">
+            <h1>Quiz History</h1>
+            <p>View your previously completed quizzes and scores</p>
+        </div>
+
+        <div class="history-card">
+
+            <h2>Previous Quizzes</h2>
+
+            <div class="history-table-wrapper">
+
+                <table class="history-table">
+
+                    <thead>
+                        <tr>
+                            <th>Quiz Category</th>
+                            <th>Date</th>
+                            <th>Score</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="historyTableBody">
+                        <tr>
+                            <td colspan="3">Loading quiz history...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

@@ -1,0 +1,58 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Quiz Category | QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="admin-category-page">
+
+    <div class="category-admin-container">
+
+        <div class="category-admin-header">
+            <div>
+                <span class="category-admin-label">ADMINISTRATION</span>
+                <h1>Add Quiz Category</h1>
+                <p>Create a new category for quizzes on the platform.</p>
+            </div>
+
+            <a href="admin-login.html" class="category-back-link">
+                ← Admin Login
+            </a>
+        </div>
+
+        <div class="category-form-card">
+
+            <div class="category-form-heading">
+                <h2>Category Details</h2>
+                <p>Enter the name of the new quiz category.</p>
+            </div>
+
+            <form id="categoryForm">
+
+                <div class="category-field">
+                    <label for="categoryName">Category Name</label>
+                    <input
+                        type="text"
+                        id="categoryName"
+                        placeholder="e.g. General Knowledge"
+                        required
+                    >
+                </div>
+
+                <button type="submit" class="category-add-btn">
+                    + Add Category
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>

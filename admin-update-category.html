@@ -1,0 +1,65 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Update Quiz Category | QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="update-category-page">
+
+    <div class="update-category-container">
+
+        <div class="update-category-header">
+            <div>
+                <span class="update-category-label">ADMINISTRATION</span>
+                <h1>Update Quiz Category</h1>
+                <p>Manage and edit existing quiz categories.</p>
+            </div>
+
+            <a href="admin-add-category.html" class="add-category-link">
+                + Add New Category
+            </a>
+        </div>
+
+        <div class="update-category-card">
+
+            <div class="update-card-heading">
+                <div>
+                    <h2>Existing Categories</h2>
+                    <p>Select a category to update its name.</p>
+                </div>
+            </div>
+
+            <div class="category-table-wrapper">
+                <table class="update-category-table">
+
+                    <thead>
+                        <tr>
+                            <th>Sl. No</th>
+                            <th>Category Name</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="updateCategoryTable">
+                        <tr>
+                            <td colspan="3">Loading categories...</td>
+                        </tr>
+                    </tbody>
+
+                </table>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
+

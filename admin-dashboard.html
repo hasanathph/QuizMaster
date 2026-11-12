@@ -1,0 +1,278 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard | QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        .admin-dashboard-page {
+            margin: 0;
+            background: #F5F6FA;
+            font-family: 'Poppins', Arial, sans-serif;
+            color: #25243A;
+        }
+
+        .dashboard-navbar {
+            background: #30245B;
+            color: white;
+            padding: 18px 5%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .dashboard-brand {
+            font-size: 22px;
+            font-weight: 700;
+        }
+
+        .dashboard-brand span {
+            background: #8065C9;
+            padding: 7px 11px;
+            border-radius: 8px;
+            margin-right: 8px;
+        }
+
+        .dashboard-actions {
+            display: flex;
+            gap: 12px;
+        }
+
+        .dashboard-actions a,
+        .dashboard-actions button {
+            text-decoration: none;
+            padding: 9px 16px;
+            border-radius: 6px;
+            font-size: 13px;
+            cursor: pointer;
+        }
+
+        .home-btn {
+            color: white;
+            border: 1px solid #B8A9E8;
+            background: transparent;
+        }
+
+        .logout-btn {
+            background: #FFFFFF;
+            color: #30245B;
+            border: none;
+            font-weight: 600;
+        }
+
+        .dashboard-container {
+            max-width: 1150px;
+            margin: 45px auto;
+            padding: 0 25px;
+        }
+
+        .dashboard-heading h1 {
+            font-size: 28px;
+            margin: 0 0 8px;
+        }
+
+        .dashboard-heading p {
+            color: #77758A;
+            font-size: 14px;
+            margin-bottom: 30px;
+        }
+
+        .dashboard-section-title {
+            font-size: 17px;
+            margin: 30px 0 16px;
+        }
+
+        .admin-dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 18px;
+        }
+
+        .admin-dashboard-card {
+            background: white;
+            padding: 23px;
+            border: 1px solid #E9E6F2;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #25243A;
+            transition: 0.2s;
+            display: block;
+        }
+
+        .admin-dashboard-card:hover {
+            transform: translateY(-4px);
+            border-color: #8065C9;
+            box-shadow: 0 8px 22px rgba(48, 36, 91, 0.08);
+        }
+
+        .admin-card-icon {
+            width: 43px;
+            height: 43px;
+            background: #F0EBFC;
+            color: #7255B5;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 21px;
+            margin-bottom: 17px;
+        }
+
+        .admin-dashboard-card h3 {
+            font-size: 15px;
+            margin: 0 0 7px;
+        }
+
+        .admin-dashboard-card p {
+            color: #858296;
+            font-size: 12px;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        .dashboard-footer {
+            text-align: center;
+            color: #9290A0;
+            font-size: 12px;
+            padding: 25px;
+        }
+
+        @media (max-width: 800px) {
+            .admin-dashboard-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 520px) {
+            .dashboard-navbar {
+                padding: 15px;
+                flex-wrap: wrap;
+                gap: 15px;
+            }
+
+            .dashboard-container {
+                margin-top: 30px;
+                padding: 0 15px;
+            }
+
+            .admin-dashboard-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .dashboard-heading h1 {
+                font-size: 23px;
+            }
+        }
+    </style>
+</head>
+
+<body class="admin-dashboard-page">
+
+    <header class="dashboard-navbar">
+
+        <div class="dashboard-brand">
+            <span>Q</span> QuizMaster
+        </div>
+
+        <div class="dashboard-actions">
+            <a href="index.html" class="home-btn">Home</a>
+            <button type="button" class="logout-btn" id="adminLogout">
+                Logout
+            </button>
+        </div>
+
+    </header>
+
+    <main class="dashboard-container">
+
+        <div class="dashboard-heading">
+            <h1>Admin Dashboard</h1>
+            <p>Welcome back! Manage your QuizMaster platform from here.</p>
+        </div>
+
+        <h2 class="dashboard-section-title">Category Management</h2>
+
+        <div class="admin-dashboard-grid">
+
+            <a href="admin-add-category.html" class="admin-dashboard-card">
+                <div class="admin-card-icon">＋</div>
+                <h3>Add Category</h3>
+                <p>Create a new quiz category.</p>
+            </a>
+
+            <a href="admin-update-category.html" class="admin-dashboard-card">
+                <div class="admin-card-icon">✎</div>
+                <h3>Update Category</h3>
+                <p>Edit existing quiz categories.</p>
+            </a>
+
+            <a href="admin-delete-category.html" class="admin-dashboard-card">
+                <div class="admin-card-icon">−</div>
+                <h3>Delete Category</h3>
+                <p>Remove unwanted categories.</p>
+            </a>
+
+        </div>
+
+        <h2 class="dashboard-section-title">Question Management</h2>
+
+        <div class="admin-dashboard-grid">
+
+            <a href="admin-add-question.html" class="admin-dashboard-card">
+                <div class="admin-card-icon">＋</div>
+                <h3>Add Questions</h3>
+                <p>Add new questions with four answer options.</p>
+            </a>
+
+            <a href="admin-update-question.html" class="admin-dashboard-card">
+                <div class="admin-card-icon">✎</div>
+                <h3>Update Questions</h3>
+                <p>Edit existing quiz questions.</p>
+            </a>
+
+            <a href="admin-delete-question.html" class="admin-dashboard-card">
+                <div class="admin-card-icon">−</div>
+                <h3>Delete Questions</h3>
+                <p>Remove questions from quizzes.</p>
+            </a>
+
+        </div>
+
+        <h2 class="dashboard-section-title">User & Result Management</h2>
+
+        <div class="admin-dashboard-grid">
+
+            <a href="admin-view-users.html" class="admin-dashboard-card">
+                <div class="admin-card-icon">♙</div>
+                <h3>Registered Users</h3>
+                <p>View users registered on the platform.</p>
+            </a>
+
+            <a href="admin-view-results.html" class="admin-dashboard-card">
+                <div class="admin-card-icon">▤</div>
+                <h3>Quiz Results</h3>
+                <p>View quiz results and user performance.</p>
+            </a>
+
+        </div>
+
+    </main>
+
+    <footer class="dashboard-footer">
+        © 2026 QuizMaster Admin Portal
+    </footer>
+
+    <script>
+        const logoutButton = document.getElementById("adminLogout");
+
+        logoutButton.addEventListener("click", function() {
+            sessionStorage.removeItem("adminLoggedIn");
+            window.location.href = "admin-login.html";
+        });
+    </script>
+
+</body>
+</html>

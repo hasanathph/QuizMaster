@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard | QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body class="user-dashboard-page">
+
+    <div class="user-dashboard">
+
+        <aside class="user-sidebar">
+            <h2>QuizMaster</h2>
+            <p class="sidebar-label">MAIN MENU</p>
+
+            <a href="user-dashboard.html" class="active">Dashboard</a>
+            <a href="categories.html">Explore Quizzes</a>
+            <a href="history.html">Quiz History</a>
+            <a href="leaderboard.html">Leaderboard</a>
+            <a href="profile.html">My Profile</a>
+
+            <button id="userLogout">Logout</button>
+        </aside>
+
+        <main class="user-main">
+
+            <header class="user-header">
+                <div>
+                    <h1>Dashboard</h1>
+                    <p>Track your learning and quiz performance.</p>
+                </div>
+                <span class="user-welcome" id="dashboardUserName">Welcome!</span>
+            </header>
+
+            <section class="user-stats">
+                <div class="user-stat-card">
+                    <h3>Total Quizzes</h3>
+                    <p id="totalQuizzes">0</p>
+                </div>
+
+                <div class="user-stat-card">
+                    <h3>Total Score</h3>
+                    <p id="totalScore">0</p>
+                </div>
+
+                <a href="leaderboard.html" class="user-stat-card leaderboard-card">
+    <h3>Leaderboard</h3>
+    <p>View Ranking →</p>
+</a>
+            </section>
+
+            <section class="user-quiz-section">
+                <h2>Ready for a Quiz?</h2>
+                <p>Choose a category and test your knowledge.</p>
+                <a href="categories.html" class="user-start-btn">
+                    Explore Categories →
+                </a>
+            </section>
+
+            <section class="user-quick-links">
+                <h2>Quick Access</h2>
+
+                <div class="user-link-grid">
+                    <a href="categories.html">Explore Quizzes →</a>
+                    <a href="history.html">My Quiz History →</a>
+                    <a href="leaderboard.html">View Leaderboard →</a>
+                    <a href="profile.html">Manage Profile →</a>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

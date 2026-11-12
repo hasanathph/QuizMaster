@@ -1,0 +1,106 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Questions | QuizMaster</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="add-question-page">
+
+    <div class="question-admin-container">
+
+        <div class="question-admin-header">
+            <div>
+                <span class="question-admin-label">ADMINISTRATION</span>
+                <h1>Add Questions</h1>
+                <p>Create questions and assign them to quiz categories.</p>
+            </div>
+
+            <a href="admin-add-category.html" class="question-back-link">
+                ← Categories
+            </a>
+        </div>
+
+        <div class="question-form-card">
+
+            <div class="question-form-heading">
+                <h2>Question Details</h2>
+                <p>Fill in the question and its answer options.</p>
+            </div>
+
+            <form id="addQuestionForm">
+
+                <div class="question-field">
+                    <label for="questionCategory">Quiz Category</label>
+                    <select id="questionCategory" required>
+                        <option value="">Loading categories...</option>
+                    </select>
+                </div>
+
+                <div class="question-field">
+                    <label for="questionText">Question</label>
+                    <textarea
+                        id="questionText"
+                        rows="3"
+                        placeholder="Enter your question here..."
+                        required
+                    ></textarea>
+                </div>
+
+                <div class="question-options-grid">
+
+                    <div class="question-field">
+                        <label for="optionA">Option A</label>
+                        <input type="text" id="optionA"
+                            placeholder="Enter option A" required>
+                    </div>
+
+                    <div class="question-field">
+                        <label for="optionB">Option B</label>
+                        <input type="text" id="optionB"
+                            placeholder="Enter option B" required>
+                    </div>
+
+                    <div class="question-field">
+                        <label for="optionC">Option C</label>
+                        <input type="text" id="optionC"
+                            placeholder="Enter option C" required>
+                    </div>
+
+                    <div class="question-field">
+                        <label for="optionD">Option D</label>
+                        <input type="text" id="optionD"
+                            placeholder="Enter option D" required>
+                    </div>
+
+                </div>
+
+                <div class="question-field">
+                    <label for="correctAnswer">Correct Answer</label>
+                    <select id="correctAnswer" required>
+                        <option value="">Select Correct Option</option>
+                        <option value="A">Option A</option>
+                        <option value="B">Option B</option>
+                        <option value="C">Option C</option>
+                        <option value="D">Option D</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="save-question-btn">
+                    + Add Question
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
